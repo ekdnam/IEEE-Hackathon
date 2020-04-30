@@ -1,0 +1,84 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="ea252cec-b3be-466f-912f-ee4a4801cee4" data-root-id="1093"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1182">
+          {"a085b7f9-16d1-489c-aeca-58820caee700":{"roots":{"references":[{"attributes":{"source":{"id":"1092","type":"ColumnDataSource"}},"id":"1118","type":"CDSView"},{"attributes":{},"id":"1100","type":"CategoricalScale"},{"attributes":{"callback":null,"end":10000},"id":"1098","type":"Range1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto"},"id":"1113","type":"Toolbar"},{"attributes":{},"id":"1105","type":"CategoricalTicker"},{"attributes":{"callback":null,"factors":["Healthy","Average","Dead","Poor"]},"id":"1096","type":"FactorRange"},{"attributes":{"formatter":{"id":"1120","type":"CategoricalTickFormatter"},"ticker":{"id":"1105","type":"CategoricalTicker"}},"id":"1104","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"1092","type":"ColumnDataSource"},"glyph":{"id":"1115","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1116","type":"VBar"},"selection_glyph":null,"view":{"id":"1118","type":"CDSView"}},"id":"1117","type":"GlyphRenderer"},{"attributes":{"fill_color":{"field":"color"},"line_color":{"field":"color"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"condition"}},"id":"1115","type":"VBar"},{"attributes":{},"id":"1124","type":"Selection"},{"attributes":{},"id":"1122","type":"BasicTickFormatter"},{"attributes":{},"id":"1102","type":"LinearScale"},{"attributes":{},"id":"1125","type":"UnionRenderers"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"counts"},"width":{"value":0.9},"x":{"field":"condition"}},"id":"1116","type":"VBar"},{"attributes":{},"id":"1120","type":"CategoricalTickFormatter"},{"attributes":{"grid_line_color":null,"ticker":{"id":"1105","type":"CategoricalTicker"}},"id":"1107","type":"Grid"},{"attributes":{"dimension":1,"ticker":{"id":"1109","type":"BasicTicker"}},"id":"1112","type":"Grid"},{"attributes":{"callback":null,"data":{"color":["#3288bd","#99d594","#e6f598","#fee08b","#fc8d59","#d53e4f"],"condition":["Healthy","Average","Dead","Poor"],"counts":[9342,208,51,22]},"selected":{"id":"1124","type":"Selection"},"selection_policy":{"id":"1125","type":"UnionRenderers"}},"id":"1092","type":"ColumnDataSource"},{"attributes":{},"id":"1109","type":"BasicTicker"},{"attributes":{"below":[{"id":"1104","type":"CategoricalAxis"}],"center":[{"id":"1107","type":"Grid"},{"id":"1112","type":"Grid"}],"left":[{"id":"1108","type":"LinearAxis"}],"renderers":[{"id":"1117","type":"GlyphRenderer"}],"title":{"id":"1094","type":"Title"},"toolbar":{"id":"1113","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"1096","type":"FactorRange"},"x_scale":{"id":"1100","type":"CategoricalScale"},"y_range":{"id":"1098","type":"Range1d"},"y_scale":{"id":"1102","type":"LinearScale"}},"id":"1093","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"1122","type":"BasicTickFormatter"},"ticker":{"id":"1109","type":"BasicTicker"}},"id":"1108","type":"LinearAxis"},{"attributes":{"text":"Condition of trees"},"id":"1094","type":"Title"}],"root_ids":["1093"]},"title":"Bokeh Application","version":"1.3.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1182').textContent;
+                  var render_items = [{"docid":"a085b7f9-16d1-489c-aeca-58820caee700","roots":{"1093":"ea252cec-b3be-466f-912f-ee4a4801cee4"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
